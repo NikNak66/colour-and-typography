@@ -1,6 +1,8 @@
 # colour-and-typography
 Using typography and colour only to build a website.
 
+https://adelei.co.uk/applied_art/typesetting_project_v3/index.html 
+
 <!--What the project does
     Why the project is useful
     How users can get started with the project
