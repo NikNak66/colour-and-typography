@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------start of personal css------------
+
+Colour palette
+navy        1f2b3b
+blue        42567a
+slate blue  617191
+lilac       9e9abf
+mauve       c9becb
+chai        c2ad9d
+cream       eee8e1
+
+MOBILE FIRST ------*/
+
+body{
+  box-sizing: border-box;
+  font-family: "Jost", "Lucida Console", "Lucida Sans Typewriter", "Lucida Grande", sans-serif;
+  line-height: 1.5;
+  color: #1f2b3b;
+}
+
+nav{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(180deg, #1f2b3b 37%, #42567a 62%, #9e9abf 77%, #c9becb 87%, #c2ad9d 94%, #eee8e1 100%);
+  color: #eee8e1;
+}
+
+
+ul{
+  list-style: square;
+  padding-left: 2em;
+}
+
+cite{
+  display: block;
+  font-style: italic;
+  padding-top: 1em;
+	font-weight: 300;
+}
+
+main{
+  max-width: 220px;
+  margin: auto;
+  padding-bottom: 3em;
+}
+
+h1{
+   text-align: center;
+   font-weight:600;
+   font-size: 2em;
+   line-height: 1.25em;
+   margin-top: 1.5em;
+}
+
+h1 + cite{
+  display: block;
+  font-family: "Shadows Into Light", "Bradley Hand", "Apple Chancery", cursive;
+  text-align: center;
+  margin-top: 1.5em;
+
+}
+
+p{
+  margin-top: 1.5em;
+}
+
+#signage {
+  font-family: "Chakra Petch", "Courier", "Andale Mono", monospace;
+  text-transform: uppercase;
+  font-size: .7em;
+  color: black;
+  letter-spacing: .05em;
+  padding: 0 1em;
+}
+
+#signage li{
+  padding-left: 1em;
+  list-style: square;
+}
+
+#handwritting {
+  font-family: "Shadows into light", "Bradley Hand", "Apple chancery", cursive;
+  text-align: center;
+}
+
+h2{
+  font-size: 2em;
+  text-align: center;
+  padding-top:  2em;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 1.5em;
+  text-align: center;
+  padding-top:  2em;
+  font-weight: 500;
+}
+
+h2+h3{
+  padding-top: 2em;
+}
+
+nav ul{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:focus {
+  background-color: #617191;
+}
+
+p a{
+	text-decoration: underline;
+}
+
+footer a{
+	text-decoration: underline;
+}
+
+footer{
+	text-align: center;
+	color: grey;
+	font-size: .8em;
+	padding-bottom: 1em;
+}
+
+/*------------------ 500---------------------*/
+
+@media (min-width: 500px){
+
+    main{
+      max-width: 70%;
+      margin: auto;
+    }
+    cite{
+      padding: 1em 1em 0em 1em;
+    }
+
+}
+
+/*------------------ 700---------------------*/
+
+@media (min-width: 700px){
+
+  header li{
+    font-size: 1.25em;
+    padding-bottom: 1em;
+  }
+main{
+	font-size: 1.25em;
+}
+
+  #signage{
+    margin: 1em 4em;
+    font-size: .8em;
+
+  }
+  #handwritting{
+    font-size: 1.25em;
+  }
+
+  h1 + cite{
+    font-size: 1.25em;
+    margin-top: auto;
+}
+
+cite{
+  padding: 1em 2em 0em 2em;
+}
+
+ul{
+  padding-left: 3em;
+}
+
+}
+/*------------------ 900---------------------*/
+
+
+@media (min-width: 900px){
+  main{
+    max-width: 60%;
+    margin: auto;
+  }
+
+h1{
+  display:flex;
+  flex-direction: column;
+  max-width: 20%;
+  flex-flow: column wrap;
+  margin: auto;
+  padding-top: 1em;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+nav li{
+  padding: 0 20px;
+}
+
+nav{
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+}
+
+/*------------------ full layout---------------------*/
+
+@media (min-width: 1200px){
+  main{
+    max-width: 40%;
+    margin: auto;
+  }
+
+}
